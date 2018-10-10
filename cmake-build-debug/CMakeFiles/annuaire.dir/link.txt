@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/annuaire.dir/Devoir_Annuaire/annuaire.c.o CMakeFiles/annuaire.dir/Devoir_Annuaire/gestionFichier.c.o CMakeFiles/annuaire.dir/Devoir_Annuaire/main.c.o CMakeFiles/annuaire.dir/Devoir_Annuaire/personne.c.o ../Devoir_Annuaire/annuaire.o ../Devoir_Annuaire/main.o ../Devoir_Annuaire/personne.o  -o annuaire 

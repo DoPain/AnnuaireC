@@ -27,9 +27,14 @@ int ajouter_personne(struct Annuaire *ptr_annuaire, const struct Personne *ptr_n
     }
 
     assert(ptr_annuaire -> tableau!=NULL);
-    ++ptr_annuaire -> taille;
-    ptr_annuaire -> tableau[ptr_annuaire -> taille-1].naissance = ptr_nouveau -> naissance;
+    ptr_annuaire -> taille=(ptr_annuaire -> taille)+1;
+    struct Personne p;
+    p.prenom=ptr_nouveau->prenom;
+    p.nom=ptr_nouveau->nom;
+    p.naissance=ptr_nouveau->naissance;
+    ptr_annuaire->tableau[ptr_annuaire->taille-1]=p;
+    /**ptr_annuaire -> tableau[ptr_annuaire -> taille-1].naissance = ptr_nouveau -> naissance;
     strcpy(ptr_nouveau->nom, ptr_annuaire->tableau[ptr_annuaire -> taille-1].nom);
-    strcpy(ptr_nouveau->prenom, ptr_annuaire->tableau[ptr_annuaire -> taille-1].prenom);
-    
+    strcpy(ptr_nouveau->prenom, ptr_annuaire->tableau[ptr_annuaire -> taille-1].prenom);*/
+    return EXIT_SUCCESS;
 }
